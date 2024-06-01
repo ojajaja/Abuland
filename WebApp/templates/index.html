@@ -1,28 +1,138 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rice Price and Demand Forecast</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-</head>
-<body>
-    <div class="container">
-        <h1>Rice Price and Demand Forecast System</h1>
-        <form id="forecastForm">
-            <label for="ricePrice">Current Rice Price ($/kg):</label>
-            <input type="number" id="ricePrice" name="ricePrice" min="0" step="0.01" required>
-            <label for="riceDemand">Current Rice Demand (kg):</label>
-            <input type="number" id="riceDemand" name="riceDemand" min="0" step="1" required>
-            <input type="submit" value="Forecast">
-        </form>
-        <div id="forecastResult" style="display: none;">
-            <h2>Forecast Result</h2>
-            <p>Predicted Price: <span id="predictedPrice"></span> $/kg</p>
-            <p>Predicted Demand: <span id="predictedDemand"></span> kg</p>
-        </div>
+{% extends "base.html" %}
+{% block title %}Rice Consumption Prediction{% endblock %}
+{% block content%}
+
+<div class="container">
+    <h1>Rice Price and Demand Forecast System</h1>
+    <form id="forecastForm" action="{{ url_for('index') }}" method="POST">
+        <label for="Year">Year</label>
+        <input type="number" id="Year" name="Year" min="0" step="1" required>
+        
+        <label for="PerCapGNI">Per Capita GNI</label>
+        <input type="number" id="PerCapGNI" name="PerCapGNI" min="0" step="0.01" required>
+        
+        <label for="PerCapGDP">Per Capita GDP</label>
+        <input type="number" id="PerCapGDP" name="PerCapGDP" min="0" step="0.01" required>
+        
+        <label for="GNI_USD">GNI in USD</label>
+        <input type="number" id="GNI_USD" name="GNI_USD" min="0" step="0.01" required>
+        
+        <label for="GDP_USD">GDP in USD</label>
+        <input type="number" id="GDP_USD" name="GDP_USD" min="0" step="0.01" required>
+        
+        <label for="Inflation">Inflation</label>
+        <input type="number" id="Inflation" name="Inflation" min="0" step="0.01" required>
+        
+        <label for="MeanPriceUSD">Mean Price in USD</label>
+        <input type="number" id="MeanPriceUSD" name="MeanPriceUSD" min="0" step="0.01" required>
+        
+        <label for="TotPop">Total Population</label>
+        <input type="number" id="TotPop" name="TotPop" min="0" step="1" required>
+        
+        <label for="ResPop">Resident Population</label>
+        <input type="number" id="ResPop" name="ResPop" min="0" step="1" required>
+        
+        <label for="CitizenPop">Citizen Population</label>
+        <input type="number" id="CitizenPop" name="CitizenPop" min="0" step="1" required>
+        
+        <label for="PRPop">Permanent Resident Population</label>
+        <input type="number" id="PRPop" name="PRPop" min="0" step="1" required>
+        
+        <label for="NonResPop">Non-Resident Population</label>
+        <input type="number" id="NonResPop" name="NonResPop" min="0" step="1" required>
+        
+        <label for="PopGrowth">Population Growth</label>
+        <input type="number" id="PopGrowth" name="PopGrowth" min="0" step="0.01" required>
+        
+        <label for="ResPopGrowth">Resident Population Growth</label>
+        <input type="number" id="ResPopGrowth" name="ResPopGrowth" min="0" step="0.01" required>
+        
+        <label for="PopDensity">Population Density</label>
+        <input type="number" id="PopDensity" name="PopDensity" min="0" step="0.01" required>
+        
+        <label for="SexRatio">Sex Ratio</label>
+        <input type="number" id="SexRatio" name="SexRatio" min="0" step="0.01" required>
+        
+        <label for="MedAgeRes">Median Age of Residents</label>
+        <input type="number" id="MedAgeRes" name="MedAgeRes" min="0" step="0.01" required>
+        
+        <label for="MedAgeCit">Median Age of Citizens</label>
+        <input type="number" id="MedAgeCit" name="MedAgeCit" min="0" step="0.01" required>
+        
+        <label for="OldSupRatio">Old Support Ratio</label>
+        <input type="number" id="OldSupRatio" name="OldSupRatio" min="0" step="0.01" required>
+        
+        <label for="AgeDepRatio">Age Dependency Ratio</label>
+        <input type="number" id="AgeDepRatio" name="AgeDepRatio" min="0" step="0.01" required>
+        
+        <label for="ChildDepRat">Child Dependency Ratio</label>
+        <input type="number" id="ChildDepRat" name="ChildDepRat" min="0" step="0.01" required>
+        
+        <label for="OldDepRatio">Old Dependency Ratio</label>
+        <input type="number" id="OldDepRatio" name="OldDepRatio" min="0" step="0.01" required>
+        
+        <label for="OldSup20_64">Old Support Ratio (20-64)</label>
+        <input type="number" id="OldSup20_64" name="OldSup20_64" min="0" step="0.01" required>
+        
+        <label for="AgeDep20_64">Age Dependency Ratio (20-64)</label>
+        <input type="number" id="AgeDep20_64" name="AgeDep20_64" min="0" step="0.01" required>
+        
+        <label for="ChildDep20_64">Child Dependency Ratio (20-64)</label>
+        <input type="number" id="ChildDep20_64" name="ChildDep20_64" min="0" step="0.01" required>
+        
+        <label for="OldDep20_64">Old Dependency Ratio (20-64)</label>
+        <input type="number" id="OldDep20_64" name="OldDep20_64" min="0" step="0.01" required>
+        
+        <label for="CitSup15_64">Citizen Support Ratio (15-64)</label>
+        <input type="number" id="CitSup15_64" name="CitSup15_64" min="0" step="0.01" required>
+        
+        <label for="CitDep15_64">Citizen Dependency Ratio (15-64)</label>
+        <input type="number" id="CitDep15_64" name="CitDep15_64" min="0" step="0.01" required>
+        
+        <label for="CitChildDep15_64">Citizen Child Dependency Ratio (15-64)</label>
+        <input type="number" id="CitChildDep15_64" name="CitChildDep15_64" min="0" step="0.01" required>
+        
+        <label for="CitOldDep15_64">Citizen Old Dependency Ratio (15-64)</label>
+        <input type="number" id="CitOldDep15_64" name="CitOldDep15_64" min="0" step="0.01" required>
+        
+        <label for="CitSup20_64">Citizen Support Ratio (20-64)</label>
+        <input type="number" id="CitSup20_64" name="CitSup20_64" min="0" step="0.01" required>
+        
+        <label for="CitDep20_64">Citizen Dependency Ratio (20-64)</label>
+        <input type="number" id="CitDep20_64" name="CitDep20_64" min="0" step="0.01" required>
+        
+        <label for="CitChildDep20_64">Citizen Child Dependency Ratio (20-64)</label>
+        <input type="number" id="CitChildDep20_64" name="CitChildDep20_64" min="0" step="0.01" required>
+        
+        <label for="CitOldDep20_64">Citizen Old Dependency Ratio (20-64)</label>
+        <input type="number" id="CitOldDep20_64" name="CitOldDep20_64" min="0" step="0.01" required>
+        
+        <label for="ResNatInc">Resident National Income</label>
+        <input type="number" id="ResNatInc" name="ResNatInc" min="0" step="0.01" required>
+        
+        <label for="NatIncRate">National Income Rate</label>
+        <input type="number" id="NatIncRate" name="NatIncRate" min="0" step="0.01" required>
+        
+        <label for="IndPrecip">Individual Precipitation</label>
+        <input type="number" id="IndPrecip" name="IndPrecip" min="0" step="0.01" required>
+        
+        <label for="IndTemp">Individual Temperature</label>
+        <input type="number" id="IndTemp" name="IndTemp" min="0" step="0.01" required>
+        
+        <label for="ThaPrecip">Thailand Precipitation</label>
+        <input type="number" id="ThaPrecip" name="ThaPrecip" min="0" step="0.01" required>
+        
+        <label for="ThaTemp">Thailand Temperature</label>
+        <input type="number" id="ThaTemp" name="ThaTemp" min="0" step="0.01" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="forecastResult" style="display: none;">
+        <h2>Demand</h2>
+        <p>Predicted Rice Demand: <span id="demand"></span> {{ label }}</p>
     </div>
 
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
-</body>
-</html>
+</div>
+
+{% endblock %}
