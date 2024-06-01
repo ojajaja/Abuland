@@ -20980,3 +20980,2114 @@ Increase the number of iterations (max_iter) or scale the data as shown in:
                                                                 threshold=-inf))),
                 ('trained_model', BayesianRidge())])
 2024-06-01 08:18:20,480:INFO:save_model() successfully completed......................................
+2024-06-01 09:17:32,496:INFO:Initializing compare_models()
+2024-06-01 09:17:32,496:INFO:compare_models(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001FE1FDA5AB0>, include=None, fold=None, round=4, cross_validation=True, sort=RMSE, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.regression.oop.RegressionExperiment object at 0x000001FE1FDA5AB0>, 'include': None, 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'RMSE', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.regression.oop.RegressionExperiment'>}, exclude=None)
+2024-06-01 09:17:32,496:INFO:Checking exceptions
+2024-06-01 09:17:32,503:INFO:Preparing display monitor
+2024-06-01 09:17:32,532:INFO:Initializing Linear Regression
+2024-06-01 09:17:32,533:INFO:Total runtime is 1.5763441721598306e-05 minutes
+2024-06-01 09:17:32,536:INFO:SubProcess create_model() called ==================================
+2024-06-01 09:17:32,536:INFO:Initializing create_model()
+2024-06-01 09:17:32,537:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001FE1FDA5AB0>, estimator=lr, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001FE205B59C0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-06-01 09:17:32,537:INFO:Checking exceptions
+2024-06-01 09:17:32,537:INFO:Importing libraries
+2024-06-01 09:17:32,537:INFO:Copying training dataset
+2024-06-01 09:17:32,540:INFO:Defining folds
+2024-06-01 09:17:32,540:INFO:Declaring metric variables
+2024-06-01 09:17:32,543:INFO:Importing untrained model
+2024-06-01 09:17:32,546:INFO:Linear Regression Imported successfully
+2024-06-01 09:17:32,552:INFO:Starting cross validation
+2024-06-01 09:17:32,556:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-06-01 09:17:38,989:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:17:38,998:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:17:39,009:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:17:39,033:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:17:39,057:INFO:Calculating mean and std
+2024-06-01 09:17:39,060:INFO:Creating metrics dataframe
+2024-06-01 09:17:39,065:INFO:Uploading results into container
+2024-06-01 09:17:39,067:INFO:Uploading model into container now
+2024-06-01 09:17:39,068:INFO:_master_model_container: 23
+2024-06-01 09:17:39,068:INFO:_display_container: 5
+2024-06-01 09:17:39,069:INFO:LinearRegression(n_jobs=-1)
+2024-06-01 09:17:39,069:INFO:create_model() successfully completed......................................
+2024-06-01 09:17:39,463:INFO:SubProcess create_model() end ==================================
+2024-06-01 09:17:39,463:INFO:Creating metrics dataframe
+2024-06-01 09:17:39,470:INFO:Initializing Lasso Regression
+2024-06-01 09:17:39,470:INFO:Total runtime is 0.11564042170842488 minutes
+2024-06-01 09:17:39,472:INFO:SubProcess create_model() called ==================================
+2024-06-01 09:17:39,473:INFO:Initializing create_model()
+2024-06-01 09:17:39,473:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001FE1FDA5AB0>, estimator=lasso, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001FE205B59C0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-06-01 09:17:39,473:INFO:Checking exceptions
+2024-06-01 09:17:39,473:INFO:Importing libraries
+2024-06-01 09:17:39,473:INFO:Copying training dataset
+2024-06-01 09:17:39,476:INFO:Defining folds
+2024-06-01 09:17:39,477:INFO:Declaring metric variables
+2024-06-01 09:17:39,480:INFO:Importing untrained model
+2024-06-01 09:17:39,483:INFO:Lasso Regression Imported successfully
+2024-06-01 09:17:39,489:INFO:Starting cross validation
+2024-06-01 09:17:39,491:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-06-01 09:17:44,005:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:631: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.284e+03, tolerance: 3.008e+00
+  model = cd_fast.enet_coordinate_descent(
+
+2024-06-01 09:17:44,005:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:631: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.731e+02, tolerance: 1.621e+00
+  model = cd_fast.enet_coordinate_descent(
+
+2024-06-01 09:17:44,023:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:17:44,068:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:631: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.762e+03, tolerance: 2.932e+00
+  model = cd_fast.enet_coordinate_descent(
+
+2024-06-01 09:17:44,068:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:631: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.614e+03, tolerance: 2.876e+00
+  model = cd_fast.enet_coordinate_descent(
+
+2024-06-01 09:17:44,069:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:631: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.279e+03, tolerance: 3.000e+00
+  model = cd_fast.enet_coordinate_descent(
+
+2024-06-01 09:17:44,070:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:631: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.200e+03, tolerance: 2.512e+00
+  model = cd_fast.enet_coordinate_descent(
+
+2024-06-01 09:17:44,079:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:17:44,079:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:17:44,083:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:17:44,084:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:17:44,095:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:631: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.185e+03, tolerance: 2.649e+00
+  model = cd_fast.enet_coordinate_descent(
+
+2024-06-01 09:17:44,121:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:17:44,199:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:631: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.844e+03, tolerance: 2.662e+00
+  model = cd_fast.enet_coordinate_descent(
+
+2024-06-01 09:17:44,211:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:17:44,218:INFO:Calculating mean and std
+2024-06-01 09:17:44,220:INFO:Creating metrics dataframe
+2024-06-01 09:17:44,225:INFO:Uploading results into container
+2024-06-01 09:17:44,226:INFO:Uploading model into container now
+2024-06-01 09:17:44,228:INFO:_master_model_container: 24
+2024-06-01 09:17:44,228:INFO:_display_container: 5
+2024-06-01 09:17:44,229:INFO:Lasso(random_state=42)
+2024-06-01 09:17:44,229:INFO:create_model() successfully completed......................................
+2024-06-01 09:17:44,451:INFO:SubProcess create_model() end ==================================
+2024-06-01 09:17:44,451:INFO:Creating metrics dataframe
+2024-06-01 09:17:44,458:INFO:Initializing Ridge Regression
+2024-06-01 09:17:44,458:INFO:Total runtime is 0.19876694679260254 minutes
+2024-06-01 09:17:44,461:INFO:SubProcess create_model() called ==================================
+2024-06-01 09:17:44,461:INFO:Initializing create_model()
+2024-06-01 09:17:44,461:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001FE1FDA5AB0>, estimator=ridge, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001FE205B59C0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-06-01 09:17:44,461:INFO:Checking exceptions
+2024-06-01 09:17:44,461:INFO:Importing libraries
+2024-06-01 09:17:44,461:INFO:Copying training dataset
+2024-06-01 09:17:44,464:INFO:Defining folds
+2024-06-01 09:17:44,464:INFO:Declaring metric variables
+2024-06-01 09:17:44,467:INFO:Importing untrained model
+2024-06-01 09:17:44,470:INFO:Ridge Regression Imported successfully
+2024-06-01 09:17:44,477:INFO:Starting cross validation
+2024-06-01 09:17:44,480:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-06-01 09:17:44,580:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:17:44,587:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:17:44,598:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:17:44,598:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:17:44,606:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:17:44,612:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:04,440:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-01 09:18:04,441:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-01 09:18:04,441:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-01 09:18:04,441:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-01 09:18:04,738:INFO:PyCaret RegressionExperiment
+2024-06-01 09:18:04,738:INFO:Logging name: reg-default-name
+2024-06-01 09:18:04,738:INFO:ML Usecase: MLUsecase.REGRESSION
+2024-06-01 09:18:04,738:INFO:version 3.2.0
+2024-06-01 09:18:04,738:INFO:Initializing setup()
+2024-06-01 09:18:04,738:INFO:self.USI: 6e0a
+2024-06-01 09:18:04,738:INFO:self._variable_keys: {'y', 'gpu_n_jobs_param', 'y_test', 'exp_name_log', 'html_param', '_available_plots', 'fold_shuffle_param', 'gpu_param', '_ml_usecase', 'memory', 'idx', 'pipeline', 'X_train', 'fold_groups_param', 'y_train', 'exp_id', 'X_test', 'logging_param', 'USI', 'X', 'log_plots_param', 'transform_target_param', 'seed', 'data', 'fold_generator', 'target_param', 'n_jobs_param'}
+2024-06-01 09:18:04,738:INFO:Checking environment
+2024-06-01 09:18:04,738:INFO:python_version: 3.10.13
+2024-06-01 09:18:04,738:INFO:python_build: ('main', 'Sep 11 2023 13:15:57')
+2024-06-01 09:18:04,739:INFO:machine: AMD64
+2024-06-01 09:18:04,739:INFO:platform: Windows-10-10.0.22631-SP0
+2024-06-01 09:18:04,739:INFO:Memory: svmem(total=16886128640, available=5352022016, percent=68.3, used=11534106624, free=5352022016)
+2024-06-01 09:18:04,739:INFO:Physical Core: 16
+2024-06-01 09:18:04,739:INFO:Logical Core: 24
+2024-06-01 09:18:04,739:INFO:Checking libraries
+2024-06-01 09:18:04,739:INFO:System:
+2024-06-01 09:18:04,739:INFO:    python: 3.10.13 | packaged by Anaconda, Inc. | (main, Sep 11 2023, 13:15:57) [MSC v.1916 64 bit (AMD64)]
+2024-06-01 09:18:04,739:INFO:executable: c:\Users\marka\anaconda3\envs\aap\python.exe
+2024-06-01 09:18:04,739:INFO:   machine: Windows-10-10.0.22631-SP0
+2024-06-01 09:18:04,739:INFO:PyCaret required dependencies:
+2024-06-01 09:18:05,459:INFO:                 pip: 23.3.1
+2024-06-01 09:18:05,459:INFO:          setuptools: 68.2.2
+2024-06-01 09:18:05,459:INFO:             pycaret: 3.2.0
+2024-06-01 09:18:05,459:INFO:             IPython: 8.21.0
+2024-06-01 09:18:05,459:INFO:          ipywidgets: 8.1.2
+2024-06-01 09:18:05,459:INFO:                tqdm: 4.66.2
+2024-06-01 09:18:05,459:INFO:               numpy: 1.25.2
+2024-06-01 09:18:05,459:INFO:              pandas: 1.5.3
+2024-06-01 09:18:05,459:INFO:              jinja2: 3.1.3
+2024-06-01 09:18:05,459:INFO:               scipy: 1.11.4
+2024-06-01 09:18:05,460:INFO:              joblib: 1.3.2
+2024-06-01 09:18:05,460:INFO:             sklearn: 1.2.2
+2024-06-01 09:18:05,460:INFO:                pyod: 1.1.3
+2024-06-01 09:18:05,460:INFO:            imblearn: 0.12.0
+2024-06-01 09:18:05,460:INFO:   category_encoders: 2.6.3
+2024-06-01 09:18:05,460:INFO:            lightgbm: 4.3.0
+2024-06-01 09:18:05,460:INFO:               numba: 0.58.1
+2024-06-01 09:18:05,460:INFO:            requests: 2.31.0
+2024-06-01 09:18:05,460:INFO:          matplotlib: 3.6.0
+2024-06-01 09:18:05,460:INFO:          scikitplot: 0.3.7
+2024-06-01 09:18:05,460:INFO:         yellowbrick: 1.5
+2024-06-01 09:18:05,460:INFO:              plotly: 5.18.0
+2024-06-01 09:18:05,460:INFO:    plotly-resampler: Not installed
+2024-06-01 09:18:05,460:INFO:             kaleido: 0.2.1
+2024-06-01 09:18:05,460:INFO:           schemdraw: 0.15
+2024-06-01 09:18:05,460:INFO:         statsmodels: 0.14.1
+2024-06-01 09:18:05,460:INFO:              sktime: 0.21.1
+2024-06-01 09:18:05,460:INFO:               tbats: 1.1.3
+2024-06-01 09:18:05,460:INFO:            pmdarima: 2.0.4
+2024-06-01 09:18:05,460:INFO:              psutil: 5.9.0
+2024-06-01 09:18:05,460:INFO:          markupsafe: 2.1.3
+2024-06-01 09:18:05,460:INFO:             pickle5: Not installed
+2024-06-01 09:18:05,460:INFO:         cloudpickle: 2.2.1
+2024-06-01 09:18:05,460:INFO:         deprecation: 2.1.0
+2024-06-01 09:18:05,460:INFO:              xxhash: 3.4.1
+2024-06-01 09:18:05,460:INFO:           wurlitzer: Not installed
+2024-06-01 09:18:05,460:INFO:PyCaret optional dependencies:
+2024-06-01 09:18:07,438:INFO:                shap: 0.44.1
+2024-06-01 09:18:07,438:INFO:           interpret: 0.5.1
+2024-06-01 09:18:07,438:INFO:                umap: 0.5.5
+2024-06-01 09:18:07,438:INFO:     ydata_profiling: 4.6.0
+2024-06-01 09:18:07,438:INFO:  explainerdashboard: 0.4.5
+2024-06-01 09:18:07,438:INFO:             autoviz: Not installed
+2024-06-01 09:18:07,438:INFO:           fairlearn: 0.7.0
+2024-06-01 09:18:07,438:INFO:          deepchecks: Not installed
+2024-06-01 09:18:07,438:INFO:             xgboost: 2.0.3
+2024-06-01 09:18:07,438:INFO:            catboost: 1.2.2
+2024-06-01 09:18:07,438:INFO:              kmodes: 0.12.2
+2024-06-01 09:18:07,438:INFO:             mlxtend: 0.23.1
+2024-06-01 09:18:07,438:INFO:       statsforecast: 1.5.0
+2024-06-01 09:18:07,438:INFO:        tune_sklearn: 0.5.0
+2024-06-01 09:18:07,438:INFO:                 ray: 2.9.2
+2024-06-01 09:18:07,438:INFO:            hyperopt: 0.2.7
+2024-06-01 09:18:07,438:INFO:              optuna: 3.5.0
+2024-06-01 09:18:07,438:INFO:               skopt: 0.9.0
+2024-06-01 09:18:07,438:INFO:              mlflow: 1.30.1
+2024-06-01 09:18:07,438:INFO:              gradio: 3.50.2
+2024-06-01 09:18:07,438:INFO:             fastapi: 0.109.2
+2024-06-01 09:18:07,438:INFO:             uvicorn: 0.27.1
+2024-06-01 09:18:07,438:INFO:              m2cgen: 0.10.0
+2024-06-01 09:18:07,438:INFO:           evidently: 0.2.8
+2024-06-01 09:18:07,438:INFO:               fugue: 0.8.6
+2024-06-01 09:18:07,438:INFO:           streamlit: Not installed
+2024-06-01 09:18:07,438:INFO:             prophet: Not installed
+2024-06-01 09:18:07,439:INFO:None
+2024-06-01 09:18:07,439:INFO:Set up data.
+2024-06-01 09:18:07,449:INFO:Set up folding strategy.
+2024-06-01 09:18:07,449:INFO:Set up train/test split.
+2024-06-01 09:18:07,454:INFO:Set up index.
+2024-06-01 09:18:07,454:INFO:Assigning column types.
+2024-06-01 09:18:07,456:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-06-01 09:18:07,456:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-06-01 09:18:07,461:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-06-01 09:18:07,464:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-06-01 09:18:07,502:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-06-01 09:18:07,528:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-06-01 09:18:07,529:INFO:Soft dependency imported: xgboost: 2.0.3
+2024-06-01 09:18:07,531:INFO:Soft dependency imported: catboost: 1.2.2
+2024-06-01 09:18:07,602:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-06-01 09:18:07,605:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-06-01 09:18:07,608:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-06-01 09:18:07,639:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-06-01 09:18:07,664:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-06-01 09:18:07,665:INFO:Soft dependency imported: xgboost: 2.0.3
+2024-06-01 09:18:07,666:INFO:Soft dependency imported: catboost: 1.2.2
+2024-06-01 09:18:07,666:INFO:Engine successfully changes for model 'lasso' to 'sklearn'.
+2024-06-01 09:18:07,669:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-06-01 09:18:07,671:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-06-01 09:18:07,703:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-06-01 09:18:07,728:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-06-01 09:18:07,729:INFO:Soft dependency imported: xgboost: 2.0.3
+2024-06-01 09:18:07,731:INFO:Soft dependency imported: catboost: 1.2.2
+2024-06-01 09:18:07,734:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-06-01 09:18:07,736:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-06-01 09:18:07,770:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-06-01 09:18:07,796:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-06-01 09:18:07,798:INFO:Soft dependency imported: xgboost: 2.0.3
+2024-06-01 09:18:07,799:INFO:Soft dependency imported: catboost: 1.2.2
+2024-06-01 09:18:07,799:INFO:Engine successfully changes for model 'ridge' to 'sklearn'.
+2024-06-01 09:18:07,804:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-06-01 09:18:07,836:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-06-01 09:18:07,860:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-06-01 09:18:07,861:INFO:Soft dependency imported: xgboost: 2.0.3
+2024-06-01 09:18:07,862:INFO:Soft dependency imported: catboost: 1.2.2
+2024-06-01 09:18:07,867:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-06-01 09:18:07,899:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-06-01 09:18:07,929:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-06-01 09:18:07,930:INFO:Soft dependency imported: xgboost: 2.0.3
+2024-06-01 09:18:07,931:INFO:Soft dependency imported: catboost: 1.2.2
+2024-06-01 09:18:07,932:INFO:Engine successfully changes for model 'en' to 'sklearn'.
+2024-06-01 09:18:07,970:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-06-01 09:18:07,996:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-06-01 09:18:07,997:INFO:Soft dependency imported: xgboost: 2.0.3
+2024-06-01 09:18:07,998:INFO:Soft dependency imported: catboost: 1.2.2
+2024-06-01 09:18:08,042:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-06-01 09:18:08,066:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-06-01 09:18:08,066:INFO:Soft dependency imported: xgboost: 2.0.3
+2024-06-01 09:18:08,068:INFO:Soft dependency imported: catboost: 1.2.2
+2024-06-01 09:18:08,068:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-06-01 09:18:08,104:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-06-01 09:18:08,130:INFO:Soft dependency imported: xgboost: 2.0.3
+2024-06-01 09:18:08,131:INFO:Soft dependency imported: catboost: 1.2.2
+2024-06-01 09:18:08,168:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-06-01 09:18:08,193:INFO:Soft dependency imported: xgboost: 2.0.3
+2024-06-01 09:18:08,195:INFO:Soft dependency imported: catboost: 1.2.2
+2024-06-01 09:18:08,196:INFO:Engine successfully changes for model 'svm' to 'sklearn'.
+2024-06-01 09:18:08,257:INFO:Soft dependency imported: xgboost: 2.0.3
+2024-06-01 09:18:08,259:INFO:Soft dependency imported: catboost: 1.2.2
+2024-06-01 09:18:08,320:INFO:Soft dependency imported: xgboost: 2.0.3
+2024-06-01 09:18:08,322:INFO:Soft dependency imported: catboost: 1.2.2
+2024-06-01 09:18:08,325:INFO:Preparing preprocessing pipeline...
+2024-06-01 09:18:08,325:INFO:Set up simple imputation.
+2024-06-01 09:18:08,325:INFO:Set up feature selection.
+2024-06-01 09:18:08,387:INFO:Soft dependency imported: xgboost: 2.0.3
+2024-06-01 09:18:08,389:INFO:Soft dependency imported: catboost: 1.2.2
+2024-06-01 09:18:08,419:INFO:Finished creating preprocessing pipeline.
+2024-06-01 09:18:08,429:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\marka\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Year', 'PerCapGNI', 'PerCapGDP',
+                                             'GNI_USD', 'GDP_USD', 'Inflation',
+                                             'MeanPriceUSD', 'TotPop', 'ResPop',
+                                             'CitizenPop', 'PRPop', 'NonResPop',
+                                             'PopGrowth', 'ResPopGrowth',
+                                             'PopDensity', 'SexRatio',
+                                             'MedAgeRes', 'MedAgeCit',
+                                             'OldSupRatio...
+                                             'ChildDep20_64', 'OldDep20_64',
+                                             'CitSup15_64', 'CitDep15_64',
+                                             'CitChildDep15_64',
+                                             'CitOldDep15_64', ...],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('feature_selection',
+                 TransformerWrapper(exclude=[],
+                                    transformer=SelectFromModel(estimator=LGBMRegressor(),
+                                                                max_features=10,
+                                                                threshold=-inf)))])
+2024-06-01 09:18:08,429:INFO:Creating final display dataframe.
+2024-06-01 09:18:08,526:INFO:Setup _display_container:                     Description             Value
+0                    Session id                42
+1                        Target          RiceCons
+2                   Target type        Regression
+3           Original data shape          (19, 41)
+4        Transformed data shape          (19, 11)
+5   Transformed train set shape          (13, 11)
+6    Transformed test set shape           (6, 11)
+7              Numeric features                40
+8                    Preprocess              True
+9               Imputation type            simple
+10           Numeric imputation              mean
+11       Categorical imputation              mode
+12            Feature selection              True
+13     Feature selection method           classic
+14  Feature selection estimator          lightgbm
+15  Number of features selected                10
+16               Fold Generator             KFold
+17                  Fold Number                10
+18                     CPU Jobs                -1
+19                      Use GPU             False
+20               Log Experiment             False
+21              Experiment Name  reg-default-name
+22                          USI              6e0a
+2024-06-01 09:18:08,629:INFO:Soft dependency imported: xgboost: 2.0.3
+2024-06-01 09:18:08,631:INFO:Soft dependency imported: catboost: 1.2.2
+2024-06-01 09:18:08,697:INFO:Soft dependency imported: xgboost: 2.0.3
+2024-06-01 09:18:08,699:INFO:Soft dependency imported: catboost: 1.2.2
+2024-06-01 09:18:08,700:INFO:setup() successfully completed in 3.98s...............
+2024-06-01 09:18:08,766:INFO:Initializing compare_models()
+2024-06-01 09:18:08,767:INFO:compare_models(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002A67E32F940>, include=None, fold=None, round=4, cross_validation=True, sort=RMSE, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.regression.oop.RegressionExperiment object at 0x000002A67E32F940>, 'include': None, 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'RMSE', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.regression.oop.RegressionExperiment'>}, exclude=None)
+2024-06-01 09:18:08,767:INFO:Checking exceptions
+2024-06-01 09:18:08,768:INFO:Preparing display monitor
+2024-06-01 09:18:08,790:INFO:Initializing Linear Regression
+2024-06-01 09:18:08,790:INFO:Total runtime is 0.0 minutes
+2024-06-01 09:18:08,799:INFO:SubProcess create_model() called ==================================
+2024-06-01 09:18:08,800:INFO:Initializing create_model()
+2024-06-01 09:18:08,800:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002A67E32F940>, estimator=lr, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002A67E32F4F0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-06-01 09:18:08,800:INFO:Checking exceptions
+2024-06-01 09:18:08,800:INFO:Importing libraries
+2024-06-01 09:18:08,800:INFO:Copying training dataset
+2024-06-01 09:18:08,807:INFO:Defining folds
+2024-06-01 09:18:08,807:INFO:Declaring metric variables
+2024-06-01 09:18:08,811:INFO:Importing untrained model
+2024-06-01 09:18:08,815:INFO:Linear Regression Imported successfully
+2024-06-01 09:18:08,825:INFO:Starting cross validation
+2024-06-01 09:18:08,841:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-06-01 09:18:14,217:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:14,218:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:14,224:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:14,234:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:14,249:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:14,416:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:14,431:INFO:Calculating mean and std
+2024-06-01 09:18:14,433:INFO:Creating metrics dataframe
+2024-06-01 09:18:14,437:INFO:Uploading results into container
+2024-06-01 09:18:14,439:INFO:Uploading model into container now
+2024-06-01 09:18:14,439:INFO:_master_model_container: 1
+2024-06-01 09:18:14,439:INFO:_display_container: 2
+2024-06-01 09:18:14,440:INFO:LinearRegression(n_jobs=-1)
+2024-06-01 09:18:14,440:INFO:create_model() successfully completed......................................
+2024-06-01 09:18:14,610:INFO:SubProcess create_model() end ==================================
+2024-06-01 09:18:14,611:INFO:Creating metrics dataframe
+2024-06-01 09:18:14,618:INFO:Initializing Lasso Regression
+2024-06-01 09:18:14,618:INFO:Total runtime is 0.09712181488672893 minutes
+2024-06-01 09:18:14,622:INFO:SubProcess create_model() called ==================================
+2024-06-01 09:18:14,622:INFO:Initializing create_model()
+2024-06-01 09:18:14,622:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002A67E32F940>, estimator=lasso, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002A67E32F4F0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-06-01 09:18:14,623:INFO:Checking exceptions
+2024-06-01 09:18:14,623:INFO:Importing libraries
+2024-06-01 09:18:14,623:INFO:Copying training dataset
+2024-06-01 09:18:14,625:INFO:Defining folds
+2024-06-01 09:18:14,625:INFO:Declaring metric variables
+2024-06-01 09:18:14,630:INFO:Importing untrained model
+2024-06-01 09:18:14,634:INFO:Lasso Regression Imported successfully
+2024-06-01 09:18:14,638:INFO:Starting cross validation
+2024-06-01 09:18:14,640:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-06-01 09:18:19,033:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:631: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.279e+03, tolerance: 3.000e+00
+  model = cd_fast.enet_coordinate_descent(
+
+2024-06-01 09:18:19,044:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:19,114:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:631: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.614e+03, tolerance: 2.876e+00
+  model = cd_fast.enet_coordinate_descent(
+
+2024-06-01 09:18:19,115:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:631: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.729e+03, tolerance: 2.681e+00
+  model = cd_fast.enet_coordinate_descent(
+
+2024-06-01 09:18:19,124:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:631: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.183e+03, tolerance: 3.001e+00
+  model = cd_fast.enet_coordinate_descent(
+
+2024-06-01 09:18:19,133:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:631: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.200e+03, tolerance: 2.512e+00
+  model = cd_fast.enet_coordinate_descent(
+
+2024-06-01 09:18:19,134:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:19,144:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:19,151:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:631: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.284e+03, tolerance: 3.008e+00
+  model = cd_fast.enet_coordinate_descent(
+
+2024-06-01 09:18:19,152:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:631: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.185e+03, tolerance: 2.649e+00
+  model = cd_fast.enet_coordinate_descent(
+
+2024-06-01 09:18:19,162:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:19,162:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:19,170:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:19,252:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:631: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.762e+03, tolerance: 2.932e+00
+  model = cd_fast.enet_coordinate_descent(
+
+2024-06-01 09:18:19,264:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:19,269:INFO:Calculating mean and std
+2024-06-01 09:18:19,271:INFO:Creating metrics dataframe
+2024-06-01 09:18:19,276:INFO:Uploading results into container
+2024-06-01 09:18:19,277:INFO:Uploading model into container now
+2024-06-01 09:18:19,277:INFO:_master_model_container: 2
+2024-06-01 09:18:19,277:INFO:_display_container: 2
+2024-06-01 09:18:19,278:INFO:Lasso(random_state=42)
+2024-06-01 09:18:19,278:INFO:create_model() successfully completed......................................
+2024-06-01 09:18:19,415:INFO:SubProcess create_model() end ==================================
+2024-06-01 09:18:19,415:INFO:Creating metrics dataframe
+2024-06-01 09:18:19,421:INFO:Initializing Ridge Regression
+2024-06-01 09:18:19,422:INFO:Total runtime is 0.17719055811564127 minutes
+2024-06-01 09:18:19,424:INFO:SubProcess create_model() called ==================================
+2024-06-01 09:18:19,424:INFO:Initializing create_model()
+2024-06-01 09:18:19,424:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002A67E32F940>, estimator=ridge, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002A67E32F4F0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-06-01 09:18:19,424:INFO:Checking exceptions
+2024-06-01 09:18:19,424:INFO:Importing libraries
+2024-06-01 09:18:19,424:INFO:Copying training dataset
+2024-06-01 09:18:19,428:INFO:Defining folds
+2024-06-01 09:18:19,428:INFO:Declaring metric variables
+2024-06-01 09:18:19,431:INFO:Importing untrained model
+2024-06-01 09:18:19,434:INFO:Ridge Regression Imported successfully
+2024-06-01 09:18:19,438:INFO:Starting cross validation
+2024-06-01 09:18:19,441:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-06-01 09:18:19,515:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:19,523:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:19,533:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:19,536:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:19,540:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:19,546:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:23,209:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:23,226:INFO:Calculating mean and std
+2024-06-01 09:18:23,228:INFO:Creating metrics dataframe
+2024-06-01 09:18:23,232:INFO:Uploading results into container
+2024-06-01 09:18:23,233:INFO:Uploading model into container now
+2024-06-01 09:18:23,234:INFO:_master_model_container: 3
+2024-06-01 09:18:23,234:INFO:_display_container: 2
+2024-06-01 09:18:23,234:INFO:Ridge(random_state=42)
+2024-06-01 09:18:23,234:INFO:create_model() successfully completed......................................
+2024-06-01 09:18:23,385:INFO:SubProcess create_model() end ==================================
+2024-06-01 09:18:23,386:INFO:Creating metrics dataframe
+2024-06-01 09:18:23,392:INFO:Initializing Elastic Net
+2024-06-01 09:18:23,392:INFO:Total runtime is 0.24336233536402385 minutes
+2024-06-01 09:18:23,394:INFO:SubProcess create_model() called ==================================
+2024-06-01 09:18:23,396:INFO:Initializing create_model()
+2024-06-01 09:18:23,396:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002A67E32F940>, estimator=en, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002A67E32F4F0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-06-01 09:18:23,396:INFO:Checking exceptions
+2024-06-01 09:18:23,396:INFO:Importing libraries
+2024-06-01 09:18:23,396:INFO:Copying training dataset
+2024-06-01 09:18:23,398:INFO:Defining folds
+2024-06-01 09:18:23,399:INFO:Declaring metric variables
+2024-06-01 09:18:23,402:INFO:Importing untrained model
+2024-06-01 09:18:23,404:INFO:Elastic Net Imported successfully
+2024-06-01 09:18:23,410:INFO:Starting cross validation
+2024-06-01 09:18:23,412:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-06-01 09:18:23,480:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:631: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.828e+03, tolerance: 2.876e+00
+  model = cd_fast.enet_coordinate_descent(
+
+2024-06-01 09:18:23,493:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:631: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.433e+02, tolerance: 1.621e+00
+  model = cd_fast.enet_coordinate_descent(
+
+2024-06-01 09:18:23,510:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:631: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.796e+03, tolerance: 2.681e+00
+  model = cd_fast.enet_coordinate_descent(
+
+2024-06-01 09:18:23,516:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:631: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.553e+03, tolerance: 2.512e+00
+  model = cd_fast.enet_coordinate_descent(
+
+2024-06-01 09:18:23,516:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:631: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.034e+03, tolerance: 2.662e+00
+  model = cd_fast.enet_coordinate_descent(
+
+2024-06-01 09:18:23,516:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:631: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.630e+03, tolerance: 2.649e+00
+  model = cd_fast.enet_coordinate_descent(
+
+2024-06-01 09:18:23,516:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:631: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.521e+03, tolerance: 3.001e+00
+  model = cd_fast.enet_coordinate_descent(
+
+2024-06-01 09:18:23,518:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:631: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.674e+03, tolerance: 3.000e+00
+  model = cd_fast.enet_coordinate_descent(
+
+2024-06-01 09:18:23,523:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:631: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.564e+03, tolerance: 3.008e+00
+  model = cd_fast.enet_coordinate_descent(
+
+2024-06-01 09:18:23,524:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:23,526:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:23,527:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:23,528:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:23,530:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:631: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.089e+03, tolerance: 2.932e+00
+  model = cd_fast.enet_coordinate_descent(
+
+2024-06-01 09:18:23,530:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:23,532:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:23,536:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:23,552:INFO:Calculating mean and std
+2024-06-01 09:18:23,553:INFO:Creating metrics dataframe
+2024-06-01 09:18:23,557:INFO:Uploading results into container
+2024-06-01 09:18:23,558:INFO:Uploading model into container now
+2024-06-01 09:18:23,558:INFO:_master_model_container: 4
+2024-06-01 09:18:23,558:INFO:_display_container: 2
+2024-06-01 09:18:23,559:INFO:ElasticNet(random_state=42)
+2024-06-01 09:18:23,559:INFO:create_model() successfully completed......................................
+2024-06-01 09:18:23,682:INFO:SubProcess create_model() end ==================================
+2024-06-01 09:18:23,682:INFO:Creating metrics dataframe
+2024-06-01 09:18:23,689:INFO:Initializing Least Angle Regression
+2024-06-01 09:18:23,689:INFO:Total runtime is 0.24831589460372924 minutes
+2024-06-01 09:18:23,692:INFO:SubProcess create_model() called ==================================
+2024-06-01 09:18:23,692:INFO:Initializing create_model()
+2024-06-01 09:18:23,692:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002A67E32F940>, estimator=lar, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002A67E32F4F0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-06-01 09:18:23,692:INFO:Checking exceptions
+2024-06-01 09:18:23,692:INFO:Importing libraries
+2024-06-01 09:18:23,692:INFO:Copying training dataset
+2024-06-01 09:18:23,696:INFO:Defining folds
+2024-06-01 09:18:23,696:INFO:Declaring metric variables
+2024-06-01 09:18:23,698:INFO:Importing untrained model
+2024-06-01 09:18:23,701:INFO:Least Angle Regression Imported successfully
+2024-06-01 09:18:23,706:INFO:Starting cross validation
+2024-06-01 09:18:23,708:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-06-01 09:18:23,784:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:23,788:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:23,792:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:23,796:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:23,799:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:23,801:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:23,802:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:23,813:INFO:Calculating mean and std
+2024-06-01 09:18:23,814:INFO:Creating metrics dataframe
+2024-06-01 09:18:23,817:INFO:Uploading results into container
+2024-06-01 09:18:23,818:INFO:Uploading model into container now
+2024-06-01 09:18:23,819:INFO:_master_model_container: 5
+2024-06-01 09:18:23,819:INFO:_display_container: 2
+2024-06-01 09:18:23,819:INFO:Lars(random_state=42)
+2024-06-01 09:18:23,819:INFO:create_model() successfully completed......................................
+2024-06-01 09:18:23,947:INFO:SubProcess create_model() end ==================================
+2024-06-01 09:18:23,948:INFO:Creating metrics dataframe
+2024-06-01 09:18:23,957:INFO:Initializing Lasso Least Angle Regression
+2024-06-01 09:18:23,957:INFO:Total runtime is 0.25276960134506227 minutes
+2024-06-01 09:18:23,960:INFO:SubProcess create_model() called ==================================
+2024-06-01 09:18:23,960:INFO:Initializing create_model()
+2024-06-01 09:18:23,960:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002A67E32F940>, estimator=llar, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002A67E32F4F0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-06-01 09:18:23,960:INFO:Checking exceptions
+2024-06-01 09:18:23,960:INFO:Importing libraries
+2024-06-01 09:18:23,960:INFO:Copying training dataset
+2024-06-01 09:18:23,963:INFO:Defining folds
+2024-06-01 09:18:23,963:INFO:Declaring metric variables
+2024-06-01 09:18:23,965:INFO:Importing untrained model
+2024-06-01 09:18:23,968:INFO:Lasso Least Angle Regression Imported successfully
+2024-06-01 09:18:23,973:INFO:Starting cross validation
+2024-06-01 09:18:23,976:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-06-01 09:18:24,048:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:24,055:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:24,061:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:24,063:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:24,074:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:24,076:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:24,082:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:24,091:INFO:Calculating mean and std
+2024-06-01 09:18:24,092:INFO:Creating metrics dataframe
+2024-06-01 09:18:24,095:INFO:Uploading results into container
+2024-06-01 09:18:24,096:INFO:Uploading model into container now
+2024-06-01 09:18:24,096:INFO:_master_model_container: 6
+2024-06-01 09:18:24,096:INFO:_display_container: 2
+2024-06-01 09:18:24,097:INFO:LassoLars(random_state=42)
+2024-06-01 09:18:24,097:INFO:create_model() successfully completed......................................
+2024-06-01 09:18:24,224:INFO:SubProcess create_model() end ==================================
+2024-06-01 09:18:24,224:INFO:Creating metrics dataframe
+2024-06-01 09:18:24,231:INFO:Initializing Orthogonal Matching Pursuit
+2024-06-01 09:18:24,231:INFO:Total runtime is 0.25734953085581463 minutes
+2024-06-01 09:18:24,234:INFO:SubProcess create_model() called ==================================
+2024-06-01 09:18:24,235:INFO:Initializing create_model()
+2024-06-01 09:18:24,235:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002A67E32F940>, estimator=omp, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002A67E32F4F0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-06-01 09:18:24,235:INFO:Checking exceptions
+2024-06-01 09:18:24,235:INFO:Importing libraries
+2024-06-01 09:18:24,235:INFO:Copying training dataset
+2024-06-01 09:18:24,238:INFO:Defining folds
+2024-06-01 09:18:24,238:INFO:Declaring metric variables
+2024-06-01 09:18:24,241:INFO:Importing untrained model
+2024-06-01 09:18:24,244:INFO:Orthogonal Matching Pursuit Imported successfully
+2024-06-01 09:18:24,250:INFO:Starting cross validation
+2024-06-01 09:18:24,253:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-06-01 09:18:24,323:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:24,328:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:24,332:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:24,337:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:24,339:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:24,343:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:24,356:INFO:Calculating mean and std
+2024-06-01 09:18:24,357:INFO:Creating metrics dataframe
+2024-06-01 09:18:24,361:INFO:Uploading results into container
+2024-06-01 09:18:24,361:INFO:Uploading model into container now
+2024-06-01 09:18:24,362:INFO:_master_model_container: 7
+2024-06-01 09:18:24,362:INFO:_display_container: 2
+2024-06-01 09:18:24,363:INFO:OrthogonalMatchingPursuit()
+2024-06-01 09:18:24,363:INFO:create_model() successfully completed......................................
+2024-06-01 09:18:24,494:INFO:SubProcess create_model() end ==================================
+2024-06-01 09:18:24,494:INFO:Creating metrics dataframe
+2024-06-01 09:18:24,509:INFO:Initializing Bayesian Ridge
+2024-06-01 09:18:24,509:INFO:Total runtime is 0.2619726300239563 minutes
+2024-06-01 09:18:24,513:INFO:SubProcess create_model() called ==================================
+2024-06-01 09:18:24,514:INFO:Initializing create_model()
+2024-06-01 09:18:24,514:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002A67E32F940>, estimator=br, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002A67E32F4F0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-06-01 09:18:24,514:INFO:Checking exceptions
+2024-06-01 09:18:24,514:INFO:Importing libraries
+2024-06-01 09:18:24,514:INFO:Copying training dataset
+2024-06-01 09:18:24,517:INFO:Defining folds
+2024-06-01 09:18:24,518:INFO:Declaring metric variables
+2024-06-01 09:18:24,523:INFO:Importing untrained model
+2024-06-01 09:18:24,528:INFO:Bayesian Ridge Imported successfully
+2024-06-01 09:18:24,534:INFO:Starting cross validation
+2024-06-01 09:18:24,537:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-06-01 09:18:24,603:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:24,613:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:24,614:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:24,617:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:24,620:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:24,623:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:24,626:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:24,633:INFO:Calculating mean and std
+2024-06-01 09:18:24,634:INFO:Creating metrics dataframe
+2024-06-01 09:18:24,638:INFO:Uploading results into container
+2024-06-01 09:18:24,638:INFO:Uploading model into container now
+2024-06-01 09:18:24,639:INFO:_master_model_container: 8
+2024-06-01 09:18:24,639:INFO:_display_container: 2
+2024-06-01 09:18:24,639:INFO:BayesianRidge()
+2024-06-01 09:18:24,639:INFO:create_model() successfully completed......................................
+2024-06-01 09:18:24,760:INFO:SubProcess create_model() end ==================================
+2024-06-01 09:18:24,760:INFO:Creating metrics dataframe
+2024-06-01 09:18:24,768:INFO:Initializing Passive Aggressive Regressor
+2024-06-01 09:18:24,768:INFO:Total runtime is 0.26629502773284913 minutes
+2024-06-01 09:18:24,771:INFO:SubProcess create_model() called ==================================
+2024-06-01 09:18:24,771:INFO:Initializing create_model()
+2024-06-01 09:18:24,771:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002A67E32F940>, estimator=par, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002A67E32F4F0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-06-01 09:18:24,771:INFO:Checking exceptions
+2024-06-01 09:18:24,771:INFO:Importing libraries
+2024-06-01 09:18:24,771:INFO:Copying training dataset
+2024-06-01 09:18:24,774:INFO:Defining folds
+2024-06-01 09:18:24,774:INFO:Declaring metric variables
+2024-06-01 09:18:24,778:INFO:Importing untrained model
+2024-06-01 09:18:24,780:INFO:Passive Aggressive Regressor Imported successfully
+2024-06-01 09:18:24,786:INFO:Starting cross validation
+2024-06-01 09:18:24,788:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-06-01 09:18:24,854:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:24,860:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:24,865:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:24,870:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:24,873:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:24,877:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:24,884:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:24,897:INFO:Calculating mean and std
+2024-06-01 09:18:24,898:INFO:Creating metrics dataframe
+2024-06-01 09:18:24,902:INFO:Uploading results into container
+2024-06-01 09:18:24,903:INFO:Uploading model into container now
+2024-06-01 09:18:24,903:INFO:_master_model_container: 9
+2024-06-01 09:18:24,903:INFO:_display_container: 2
+2024-06-01 09:18:24,904:INFO:PassiveAggressiveRegressor(random_state=42)
+2024-06-01 09:18:24,904:INFO:create_model() successfully completed......................................
+2024-06-01 09:18:25,031:INFO:SubProcess create_model() end ==================================
+2024-06-01 09:18:25,031:INFO:Creating metrics dataframe
+2024-06-01 09:18:25,041:INFO:Initializing Huber Regressor
+2024-06-01 09:18:25,041:INFO:Total runtime is 0.27084981600443525 minutes
+2024-06-01 09:18:25,044:INFO:SubProcess create_model() called ==================================
+2024-06-01 09:18:25,044:INFO:Initializing create_model()
+2024-06-01 09:18:25,044:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002A67E32F940>, estimator=huber, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002A67E32F4F0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-06-01 09:18:25,044:INFO:Checking exceptions
+2024-06-01 09:18:25,044:INFO:Importing libraries
+2024-06-01 09:18:25,044:INFO:Copying training dataset
+2024-06-01 09:18:25,047:INFO:Defining folds
+2024-06-01 09:18:25,047:INFO:Declaring metric variables
+2024-06-01 09:18:25,051:INFO:Importing untrained model
+2024-06-01 09:18:25,053:INFO:Huber Regressor Imported successfully
+2024-06-01 09:18:25,062:INFO:Starting cross validation
+2024-06-01 09:18:25,065:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-06-01 09:18:25,127:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2024-06-01 09:18:25,134:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2024-06-01 09:18:25,139:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2024-06-01 09:18:25,155:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:25,161:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2024-06-01 09:18:25,165:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:25,169:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:25,170:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2024-06-01 09:18:25,174:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:25,176:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2024-06-01 09:18:25,177:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:25,181:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:25,183:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:25,194:INFO:Calculating mean and std
+2024-06-01 09:18:25,195:INFO:Creating metrics dataframe
+2024-06-01 09:18:25,198:INFO:Uploading results into container
+2024-06-01 09:18:25,198:INFO:Uploading model into container now
+2024-06-01 09:18:25,199:INFO:_master_model_container: 10
+2024-06-01 09:18:25,199:INFO:_display_container: 2
+2024-06-01 09:18:25,199:INFO:HuberRegressor()
+2024-06-01 09:18:25,200:INFO:create_model() successfully completed......................................
+2024-06-01 09:18:25,322:INFO:SubProcess create_model() end ==================================
+2024-06-01 09:18:25,322:INFO:Creating metrics dataframe
+2024-06-01 09:18:25,329:INFO:Initializing K Neighbors Regressor
+2024-06-01 09:18:25,330:INFO:Total runtime is 0.27566395998001103 minutes
+2024-06-01 09:18:25,332:INFO:SubProcess create_model() called ==================================
+2024-06-01 09:18:25,332:INFO:Initializing create_model()
+2024-06-01 09:18:25,333:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002A67E32F940>, estimator=knn, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002A67E32F4F0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-06-01 09:18:25,333:INFO:Checking exceptions
+2024-06-01 09:18:25,333:INFO:Importing libraries
+2024-06-01 09:18:25,333:INFO:Copying training dataset
+2024-06-01 09:18:25,336:INFO:Defining folds
+2024-06-01 09:18:25,336:INFO:Declaring metric variables
+2024-06-01 09:18:25,339:INFO:Importing untrained model
+2024-06-01 09:18:25,342:INFO:K Neighbors Regressor Imported successfully
+2024-06-01 09:18:25,347:INFO:Starting cross validation
+2024-06-01 09:18:25,351:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-06-01 09:18:25,446:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:25,460:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:25,461:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:25,476:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:25,476:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:25,476:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:25,476:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:25,504:INFO:Calculating mean and std
+2024-06-01 09:18:25,505:INFO:Creating metrics dataframe
+2024-06-01 09:18:25,508:INFO:Uploading results into container
+2024-06-01 09:18:25,509:INFO:Uploading model into container now
+2024-06-01 09:18:25,509:INFO:_master_model_container: 11
+2024-06-01 09:18:25,509:INFO:_display_container: 2
+2024-06-01 09:18:25,509:INFO:KNeighborsRegressor(n_jobs=-1)
+2024-06-01 09:18:25,510:INFO:create_model() successfully completed......................................
+2024-06-01 09:18:25,623:INFO:SubProcess create_model() end ==================================
+2024-06-01 09:18:25,623:INFO:Creating metrics dataframe
+2024-06-01 09:18:25,631:INFO:Initializing Decision Tree Regressor
+2024-06-01 09:18:25,632:INFO:Total runtime is 0.28069837490717575 minutes
+2024-06-01 09:18:25,634:INFO:SubProcess create_model() called ==================================
+2024-06-01 09:18:25,634:INFO:Initializing create_model()
+2024-06-01 09:18:25,635:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002A67E32F940>, estimator=dt, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002A67E32F4F0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-06-01 09:18:25,635:INFO:Checking exceptions
+2024-06-01 09:18:25,635:INFO:Importing libraries
+2024-06-01 09:18:25,635:INFO:Copying training dataset
+2024-06-01 09:18:25,638:INFO:Defining folds
+2024-06-01 09:18:25,638:INFO:Declaring metric variables
+2024-06-01 09:18:25,641:INFO:Importing untrained model
+2024-06-01 09:18:25,644:INFO:Decision Tree Regressor Imported successfully
+2024-06-01 09:18:25,650:INFO:Starting cross validation
+2024-06-01 09:18:25,652:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-06-01 09:18:25,716:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:25,722:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:25,726:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:25,731:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:25,734:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:25,736:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:25,738:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:25,753:INFO:Calculating mean and std
+2024-06-01 09:18:25,755:INFO:Creating metrics dataframe
+2024-06-01 09:18:25,758:INFO:Uploading results into container
+2024-06-01 09:18:25,758:INFO:Uploading model into container now
+2024-06-01 09:18:25,759:INFO:_master_model_container: 12
+2024-06-01 09:18:25,759:INFO:_display_container: 2
+2024-06-01 09:18:25,759:INFO:DecisionTreeRegressor(random_state=42)
+2024-06-01 09:18:25,759:INFO:create_model() successfully completed......................................
+2024-06-01 09:18:25,889:INFO:SubProcess create_model() end ==================================
+2024-06-01 09:18:25,890:INFO:Creating metrics dataframe
+2024-06-01 09:18:25,897:INFO:Initializing Random Forest Regressor
+2024-06-01 09:18:25,897:INFO:Total runtime is 0.2851161559422811 minutes
+2024-06-01 09:18:25,900:INFO:SubProcess create_model() called ==================================
+2024-06-01 09:18:25,901:INFO:Initializing create_model()
+2024-06-01 09:18:25,901:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002A67E32F940>, estimator=rf, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002A67E32F4F0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-06-01 09:18:25,901:INFO:Checking exceptions
+2024-06-01 09:18:25,901:INFO:Importing libraries
+2024-06-01 09:18:25,901:INFO:Copying training dataset
+2024-06-01 09:18:25,904:INFO:Defining folds
+2024-06-01 09:18:25,904:INFO:Declaring metric variables
+2024-06-01 09:18:25,907:INFO:Importing untrained model
+2024-06-01 09:18:25,910:INFO:Random Forest Regressor Imported successfully
+2024-06-01 09:18:25,914:INFO:Starting cross validation
+2024-06-01 09:18:25,917:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-06-01 09:18:26,172:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:26,172:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:26,189:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:26,189:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:26,189:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:26,203:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:26,216:INFO:Calculating mean and std
+2024-06-01 09:18:26,217:INFO:Creating metrics dataframe
+2024-06-01 09:18:26,220:INFO:Uploading results into container
+2024-06-01 09:18:26,220:INFO:Uploading model into container now
+2024-06-01 09:18:26,220:INFO:_master_model_container: 13
+2024-06-01 09:18:26,220:INFO:_display_container: 2
+2024-06-01 09:18:26,221:INFO:RandomForestRegressor(n_jobs=-1, random_state=42)
+2024-06-01 09:18:26,221:INFO:create_model() successfully completed......................................
+2024-06-01 09:18:26,321:INFO:SubProcess create_model() end ==================================
+2024-06-01 09:18:26,321:INFO:Creating metrics dataframe
+2024-06-01 09:18:26,329:INFO:Initializing Extra Trees Regressor
+2024-06-01 09:18:26,329:INFO:Total runtime is 0.29231365521748864 minutes
+2024-06-01 09:18:26,331:INFO:SubProcess create_model() called ==================================
+2024-06-01 09:18:26,331:INFO:Initializing create_model()
+2024-06-01 09:18:26,331:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002A67E32F940>, estimator=et, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002A67E32F4F0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-06-01 09:18:26,331:INFO:Checking exceptions
+2024-06-01 09:18:26,331:INFO:Importing libraries
+2024-06-01 09:18:26,331:INFO:Copying training dataset
+2024-06-01 09:18:26,334:INFO:Defining folds
+2024-06-01 09:18:26,334:INFO:Declaring metric variables
+2024-06-01 09:18:26,338:INFO:Importing untrained model
+2024-06-01 09:18:26,341:INFO:Extra Trees Regressor Imported successfully
+2024-06-01 09:18:26,346:INFO:Starting cross validation
+2024-06-01 09:18:26,348:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-06-01 09:18:26,606:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:26,606:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:26,606:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:26,606:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:26,620:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:26,636:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:26,648:INFO:Calculating mean and std
+2024-06-01 09:18:26,649:INFO:Creating metrics dataframe
+2024-06-01 09:18:26,651:INFO:Uploading results into container
+2024-06-01 09:18:26,652:INFO:Uploading model into container now
+2024-06-01 09:18:26,652:INFO:_master_model_container: 14
+2024-06-01 09:18:26,652:INFO:_display_container: 2
+2024-06-01 09:18:26,653:INFO:ExtraTreesRegressor(n_jobs=-1, random_state=42)
+2024-06-01 09:18:26,653:INFO:create_model() successfully completed......................................
+2024-06-01 09:18:26,752:INFO:SubProcess create_model() end ==================================
+2024-06-01 09:18:26,752:INFO:Creating metrics dataframe
+2024-06-01 09:18:26,761:INFO:Initializing AdaBoost Regressor
+2024-06-01 09:18:26,761:INFO:Total runtime is 0.29950322310129807 minutes
+2024-06-01 09:18:26,764:INFO:SubProcess create_model() called ==================================
+2024-06-01 09:18:26,764:INFO:Initializing create_model()
+2024-06-01 09:18:26,764:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002A67E32F940>, estimator=ada, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002A67E32F4F0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-06-01 09:18:26,764:INFO:Checking exceptions
+2024-06-01 09:18:26,764:INFO:Importing libraries
+2024-06-01 09:18:26,765:INFO:Copying training dataset
+2024-06-01 09:18:26,766:INFO:Defining folds
+2024-06-01 09:18:26,766:INFO:Declaring metric variables
+2024-06-01 09:18:26,769:INFO:Importing untrained model
+2024-06-01 09:18:26,772:INFO:AdaBoost Regressor Imported successfully
+2024-06-01 09:18:26,777:INFO:Starting cross validation
+2024-06-01 09:18:26,779:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-06-01 09:18:26,902:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:26,918:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:26,919:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:26,929:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:26,932:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:26,961:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:26,969:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:26,974:INFO:Calculating mean and std
+2024-06-01 09:18:26,976:INFO:Creating metrics dataframe
+2024-06-01 09:18:26,979:INFO:Uploading results into container
+2024-06-01 09:18:26,979:INFO:Uploading model into container now
+2024-06-01 09:18:26,980:INFO:_master_model_container: 15
+2024-06-01 09:18:26,980:INFO:_display_container: 2
+2024-06-01 09:18:26,980:INFO:AdaBoostRegressor(random_state=42)
+2024-06-01 09:18:26,980:INFO:create_model() successfully completed......................................
+2024-06-01 09:18:27,086:INFO:SubProcess create_model() end ==================================
+2024-06-01 09:18:27,086:INFO:Creating metrics dataframe
+2024-06-01 09:18:27,095:INFO:Initializing Gradient Boosting Regressor
+2024-06-01 09:18:27,095:INFO:Total runtime is 0.3050811608632406 minutes
+2024-06-01 09:18:27,099:INFO:SubProcess create_model() called ==================================
+2024-06-01 09:18:27,099:INFO:Initializing create_model()
+2024-06-01 09:18:27,099:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002A67E32F940>, estimator=gbr, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002A67E32F4F0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-06-01 09:18:27,099:INFO:Checking exceptions
+2024-06-01 09:18:27,099:INFO:Importing libraries
+2024-06-01 09:18:27,099:INFO:Copying training dataset
+2024-06-01 09:18:27,102:INFO:Defining folds
+2024-06-01 09:18:27,102:INFO:Declaring metric variables
+2024-06-01 09:18:27,104:INFO:Importing untrained model
+2024-06-01 09:18:27,108:INFO:Gradient Boosting Regressor Imported successfully
+2024-06-01 09:18:27,112:INFO:Starting cross validation
+2024-06-01 09:18:27,114:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-06-01 09:18:27,213:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:27,217:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:27,234:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:27,237:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:27,238:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:27,248:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:27,249:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:27,256:INFO:Calculating mean and std
+2024-06-01 09:18:27,257:INFO:Creating metrics dataframe
+2024-06-01 09:18:27,261:INFO:Uploading results into container
+2024-06-01 09:18:27,261:INFO:Uploading model into container now
+2024-06-01 09:18:27,262:INFO:_master_model_container: 16
+2024-06-01 09:18:27,262:INFO:_display_container: 2
+2024-06-01 09:18:27,262:INFO:GradientBoostingRegressor(random_state=42)
+2024-06-01 09:18:27,262:INFO:create_model() successfully completed......................................
+2024-06-01 09:18:27,361:INFO:SubProcess create_model() end ==================================
+2024-06-01 09:18:27,363:INFO:Creating metrics dataframe
+2024-06-01 09:18:27,370:INFO:Initializing Extreme Gradient Boosting
+2024-06-01 09:18:27,370:INFO:Total runtime is 0.3096619884173076 minutes
+2024-06-01 09:18:27,372:INFO:SubProcess create_model() called ==================================
+2024-06-01 09:18:27,373:INFO:Initializing create_model()
+2024-06-01 09:18:27,373:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002A67E32F940>, estimator=xgboost, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002A67E32F4F0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-06-01 09:18:27,373:INFO:Checking exceptions
+2024-06-01 09:18:27,373:INFO:Importing libraries
+2024-06-01 09:18:27,373:INFO:Copying training dataset
+2024-06-01 09:18:27,374:INFO:Defining folds
+2024-06-01 09:18:27,374:INFO:Declaring metric variables
+2024-06-01 09:18:27,378:INFO:Importing untrained model
+2024-06-01 09:18:27,382:INFO:Extreme Gradient Boosting Imported successfully
+2024-06-01 09:18:27,388:INFO:Starting cross validation
+2024-06-01 09:18:27,390:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-06-01 09:18:27,640:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:27,682:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:27,706:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:27,722:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:27,734:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:27,736:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:27,737:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:27,741:INFO:Calculating mean and std
+2024-06-01 09:18:27,742:INFO:Creating metrics dataframe
+2024-06-01 09:18:27,746:INFO:Uploading results into container
+2024-06-01 09:18:27,747:INFO:Uploading model into container now
+2024-06-01 09:18:27,747:INFO:_master_model_container: 17
+2024-06-01 09:18:27,747:INFO:_display_container: 2
+2024-06-01 09:18:27,748:INFO:XGBRegressor(base_score=None, booster='gbtree', callbacks=None,
+             colsample_bylevel=None, colsample_bynode=None,
+             colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+             enable_categorical=False, eval_metric=None, feature_types=None,
+             gamma=None, grow_policy=None, importance_type=None,
+             interaction_constraints=None, learning_rate=None, max_bin=None,
+             max_cat_threshold=None, max_cat_to_onehot=None,
+             max_delta_step=None, max_depth=None, max_leaves=None,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             multi_strategy=None, n_estimators=None, n_jobs=-1,
+             num_parallel_tree=None, random_state=42, ...)
+2024-06-01 09:18:27,748:INFO:create_model() successfully completed......................................
+2024-06-01 09:18:27,852:INFO:SubProcess create_model() end ==================================
+2024-06-01 09:18:27,852:INFO:Creating metrics dataframe
+2024-06-01 09:18:27,861:INFO:Initializing Light Gradient Boosting Machine
+2024-06-01 09:18:27,861:INFO:Total runtime is 0.3178396264712016 minutes
+2024-06-01 09:18:27,864:INFO:SubProcess create_model() called ==================================
+2024-06-01 09:18:27,864:INFO:Initializing create_model()
+2024-06-01 09:18:27,865:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002A67E32F940>, estimator=lightgbm, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002A67E32F4F0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-06-01 09:18:27,865:INFO:Checking exceptions
+2024-06-01 09:18:27,865:INFO:Importing libraries
+2024-06-01 09:18:27,865:INFO:Copying training dataset
+2024-06-01 09:18:27,868:INFO:Defining folds
+2024-06-01 09:18:27,868:INFO:Declaring metric variables
+2024-06-01 09:18:27,871:INFO:Importing untrained model
+2024-06-01 09:18:27,873:INFO:Light Gradient Boosting Machine Imported successfully
+2024-06-01 09:18:27,877:INFO:Starting cross validation
+2024-06-01 09:18:27,878:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-06-01 09:18:27,974:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:27,980:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:27,985:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:27,993:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:27,997:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:27,999:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:28,002:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:28,018:INFO:Calculating mean and std
+2024-06-01 09:18:28,019:INFO:Creating metrics dataframe
+2024-06-01 09:18:28,024:INFO:Uploading results into container
+2024-06-01 09:18:28,024:INFO:Uploading model into container now
+2024-06-01 09:18:28,024:INFO:_master_model_container: 18
+2024-06-01 09:18:28,024:INFO:_display_container: 2
+2024-06-01 09:18:28,026:INFO:LGBMRegressor(n_jobs=-1, random_state=42)
+2024-06-01 09:18:28,026:INFO:create_model() successfully completed......................................
+2024-06-01 09:18:28,172:INFO:SubProcess create_model() end ==================================
+2024-06-01 09:18:28,172:INFO:Creating metrics dataframe
+2024-06-01 09:18:28,184:INFO:Initializing CatBoost Regressor
+2024-06-01 09:18:28,184:INFO:Total runtime is 0.32322907447814947 minutes
+2024-06-01 09:18:28,188:INFO:SubProcess create_model() called ==================================
+2024-06-01 09:18:28,189:INFO:Initializing create_model()
+2024-06-01 09:18:28,189:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002A67E32F940>, estimator=catboost, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002A67E32F4F0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-06-01 09:18:28,189:INFO:Checking exceptions
+2024-06-01 09:18:28,189:INFO:Importing libraries
+2024-06-01 09:18:28,189:INFO:Copying training dataset
+2024-06-01 09:18:28,193:INFO:Defining folds
+2024-06-01 09:18:28,193:INFO:Declaring metric variables
+2024-06-01 09:18:28,196:INFO:Importing untrained model
+2024-06-01 09:18:28,200:INFO:CatBoost Regressor Imported successfully
+2024-06-01 09:18:28,207:INFO:Starting cross validation
+2024-06-01 09:18:28,209:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-06-01 09:18:29,130:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:29,131:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:29,131:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:29,133:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:29,134:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:29,142:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:29,286:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:29,294:INFO:Calculating mean and std
+2024-06-01 09:18:29,296:INFO:Creating metrics dataframe
+2024-06-01 09:18:29,300:INFO:Uploading results into container
+2024-06-01 09:18:29,300:INFO:Uploading model into container now
+2024-06-01 09:18:29,301:INFO:_master_model_container: 19
+2024-06-01 09:18:29,301:INFO:_display_container: 2
+2024-06-01 09:18:29,301:INFO:<catboost.core.CatBoostRegressor object at 0x000002A60369D5D0>
+2024-06-01 09:18:29,301:INFO:create_model() successfully completed......................................
+2024-06-01 09:18:29,448:INFO:SubProcess create_model() end ==================================
+2024-06-01 09:18:29,448:INFO:Creating metrics dataframe
+2024-06-01 09:18:29,460:INFO:Initializing Dummy Regressor
+2024-06-01 09:18:29,461:INFO:Total runtime is 0.34450803597768154 minutes
+2024-06-01 09:18:29,463:INFO:SubProcess create_model() called ==================================
+2024-06-01 09:18:29,463:INFO:Initializing create_model()
+2024-06-01 09:18:29,464:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002A67E32F940>, estimator=dummy, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002A67E32F4F0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-06-01 09:18:29,464:INFO:Checking exceptions
+2024-06-01 09:18:29,464:INFO:Importing libraries
+2024-06-01 09:18:29,464:INFO:Copying training dataset
+2024-06-01 09:18:29,469:INFO:Defining folds
+2024-06-01 09:18:29,469:INFO:Declaring metric variables
+2024-06-01 09:18:29,471:INFO:Importing untrained model
+2024-06-01 09:18:29,474:INFO:Dummy Regressor Imported successfully
+2024-06-01 09:18:29,480:INFO:Starting cross validation
+2024-06-01 09:18:29,482:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-06-01 09:18:29,557:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:29,561:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:29,564:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:29,571:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:29,574:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:29,577:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:29,582:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:29,588:INFO:Calculating mean and std
+2024-06-01 09:18:29,589:INFO:Creating metrics dataframe
+2024-06-01 09:18:29,593:INFO:Uploading results into container
+2024-06-01 09:18:29,594:INFO:Uploading model into container now
+2024-06-01 09:18:29,595:INFO:_master_model_container: 20
+2024-06-01 09:18:29,595:INFO:_display_container: 2
+2024-06-01 09:18:29,596:INFO:DummyRegressor()
+2024-06-01 09:18:29,596:INFO:create_model() successfully completed......................................
+2024-06-01 09:18:29,724:INFO:SubProcess create_model() end ==================================
+2024-06-01 09:18:29,724:INFO:Creating metrics dataframe
+2024-06-01 09:18:29,741:INFO:Initializing create_model()
+2024-06-01 09:18:29,741:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002A67E32F940>, estimator=BayesianRidge(), fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-06-01 09:18:29,741:INFO:Checking exceptions
+2024-06-01 09:18:29,743:INFO:Importing libraries
+2024-06-01 09:18:29,743:INFO:Copying training dataset
+2024-06-01 09:18:29,745:INFO:Defining folds
+2024-06-01 09:18:29,745:INFO:Declaring metric variables
+2024-06-01 09:18:29,745:INFO:Importing untrained model
+2024-06-01 09:18:29,745:INFO:Declaring custom model
+2024-06-01 09:18:29,746:INFO:Bayesian Ridge Imported successfully
+2024-06-01 09:18:29,748:INFO:Cross validation set to False
+2024-06-01 09:18:29,748:INFO:Fitting Model
+2024-06-01 09:18:29,872:INFO:[LightGBM] [Warning] There are no meaningful features which satisfy the provided configuration. Decreasing Dataset parameters min_data_in_bin or min_data_in_leaf and re-constructing Dataset might resolve this warning.
+2024-06-01 09:18:29,873:INFO:[LightGBM] [Info] Total Bins 0
+2024-06-01 09:18:29,873:INFO:[LightGBM] [Info] Number of data points in the train set: 13, number of used features: 0
+2024-06-01 09:18:29,873:INFO:[LightGBM] [Info] Start training from score 305.615385
+2024-06-01 09:18:29,873:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,873:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,873:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,873:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,874:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,874:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,874:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,874:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,874:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,874:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,874:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,874:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,874:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,874:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,874:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,874:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,874:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,874:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,874:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,874:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,874:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,874:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,874:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,874:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,874:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,874:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,874:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,874:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,874:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,875:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,875:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,875:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,875:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,875:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,875:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,875:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,875:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,875:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,875:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,875:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,875:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,876:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,876:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,876:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,876:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,876:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,876:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,876:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,876:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,876:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,876:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,876:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,876:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,876:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,876:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,876:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,876:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,876:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,876:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,876:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,876:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,876:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,876:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,876:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,876:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,876:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,876:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,876:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,877:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,877:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,877:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,877:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,877:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,877:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,877:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,877:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,877:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,877:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,877:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,877:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,877:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,877:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,877:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,877:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,877:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,877:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,877:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,877:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,877:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,877:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,877:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,877:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,877:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,877:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,877:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,878:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,878:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,878:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,878:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,878:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:29,899:INFO:BayesianRidge()
+2024-06-01 09:18:29,899:INFO:create_model() successfully completed......................................
+2024-06-01 09:18:30,051:INFO:_master_model_container: 20
+2024-06-01 09:18:30,051:INFO:_display_container: 2
+2024-06-01 09:18:30,052:INFO:BayesianRidge()
+2024-06-01 09:18:30,052:INFO:compare_models() successfully completed......................................
+2024-06-01 09:18:30,083:INFO:Initializing plot_model()
+2024-06-01 09:18:30,083:INFO:plot_model(plot=residuals, fold=None, verbose=True, display=None, display_format=None, estimator=BayesianRidge(), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.regression.oop.RegressionExperiment object at 0x000002A67E32F940>, system=True)
+2024-06-01 09:18:30,084:INFO:Checking exceptions
+2024-06-01 09:18:30,092:INFO:Preloading libraries
+2024-06-01 09:18:30,093:INFO:Copying training dataset
+2024-06-01 09:18:30,093:INFO:Plot type: residuals
+2024-06-01 09:18:30,300:INFO:Fitting Model
+2024-06-01 09:18:30,302:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\base.py:439: UserWarning: X does not have valid feature names, but BayesianRidge was fitted with feature names
+  warnings.warn(
+
+2024-06-01 09:18:30,335:INFO:Scoring test/hold-out set
+2024-06-01 09:18:30,675:INFO:Visual Rendered Successfully
+2024-06-01 09:18:30,801:INFO:plot_model() successfully completed......................................
+2024-06-01 09:18:30,817:INFO:Initializing plot_model()
+2024-06-01 09:18:30,817:INFO:plot_model(plot=error, fold=None, verbose=True, display=None, display_format=None, estimator=BayesianRidge(), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.regression.oop.RegressionExperiment object at 0x000002A67E32F940>, system=True)
+2024-06-01 09:18:30,817:INFO:Checking exceptions
+2024-06-01 09:18:30,821:INFO:Preloading libraries
+2024-06-01 09:18:30,821:INFO:Copying training dataset
+2024-06-01 09:18:30,821:INFO:Plot type: error
+2024-06-01 09:18:30,934:INFO:Fitting Model
+2024-06-01 09:18:30,934:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\base.py:439: UserWarning: X does not have valid feature names, but BayesianRidge was fitted with feature names
+  warnings.warn(
+
+2024-06-01 09:18:30,934:INFO:Scoring test/hold-out set
+2024-06-01 09:18:31,111:INFO:Visual Rendered Successfully
+2024-06-01 09:18:31,259:INFO:plot_model() successfully completed......................................
+2024-06-01 09:18:31,285:INFO:Initializing plot_model()
+2024-06-01 09:18:31,285:INFO:plot_model(plot=feature_all, fold=None, verbose=True, display=None, display_format=None, estimator=BayesianRidge(), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.regression.oop.RegressionExperiment object at 0x000002A67E32F940>, system=True)
+2024-06-01 09:18:31,285:INFO:Checking exceptions
+2024-06-01 09:18:31,288:INFO:Preloading libraries
+2024-06-01 09:18:31,289:INFO:Copying training dataset
+2024-06-01 09:18:31,289:INFO:Plot type: feature_all
+2024-06-01 09:18:31,493:INFO:Visual Rendered Successfully
+2024-06-01 09:18:31,623:INFO:plot_model() successfully completed......................................
+2024-06-01 09:18:31,674:INFO:Initializing evaluate_model()
+2024-06-01 09:18:31,676:INFO:evaluate_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002A67E32F940>, estimator=BayesianRidge(), fold=None, fit_kwargs=None, plot_kwargs=None, feature_name=None, groups=None)
+2024-06-01 09:18:31,689:INFO:Initializing plot_model()
+2024-06-01 09:18:31,689:INFO:plot_model(plot=pipeline, fold=KFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=BayesianRidge(), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.regression.oop.RegressionExperiment object at 0x000002A67E32F940>, system=True)
+2024-06-01 09:18:31,689:INFO:Checking exceptions
+2024-06-01 09:18:31,691:INFO:Preloading libraries
+2024-06-01 09:18:31,691:INFO:Copying training dataset
+2024-06-01 09:18:31,691:INFO:Plot type: pipeline
+2024-06-01 09:18:31,797:INFO:Visual Rendered Successfully
+2024-06-01 09:18:31,942:INFO:plot_model() successfully completed......................................
+2024-06-01 09:18:31,968:INFO:Initializing tune_model()
+2024-06-01 09:18:31,968:INFO:tune_model(estimator=BayesianRidge(), fold=None, round=4, n_iter=10, custom_grid=None, optimize=R2, custom_scorer=None, search_library=scikit-learn, search_algorithm=None, early_stopping=False, early_stopping_max_iters=10, choose_better=True, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, return_train_score=False, kwargs={}, self=<pycaret.regression.oop.RegressionExperiment object at 0x000002A67E32F940>)
+2024-06-01 09:18:31,968:INFO:Checking exceptions
+2024-06-01 09:18:31,981:INFO:Copying training dataset
+2024-06-01 09:18:31,983:INFO:Checking base model
+2024-06-01 09:18:31,984:INFO:Base model : Bayesian Ridge
+2024-06-01 09:18:31,987:INFO:Declaring metric variables
+2024-06-01 09:18:31,993:INFO:Defining Hyperparameters
+2024-06-01 09:18:32,145:INFO:Tuning with n_jobs=-1
+2024-06-01 09:18:32,146:INFO:Initializing RandomizedSearchCV
+2024-06-01 09:18:32,287:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,287:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,288:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,294:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,296:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,307:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,312:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,317:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,328:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,338:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,341:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,341:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,344:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,347:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,378:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,432:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,452:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,452:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,454:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,472:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,477:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,490:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,494:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,494:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,498:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,500:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,519:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,524:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,530:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,541:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,543:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,548:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,580:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,591:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,591:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,597:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,607:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,608:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,617:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,623:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,627:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,640:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,656:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,662:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,666:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,681:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,686:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,686:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,689:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,698:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,705:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,714:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,715:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,717:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,721:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,721:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,724:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,725:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,732:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,742:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,761:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,761:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,762:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,763:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,764:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,768:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,768:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,770:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,771:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,778:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\model_selection\_search.py:952: UserWarning: One or more of the test scores are non-finite: [nan nan nan nan nan nan nan nan nan nan]
+  warnings.warn(
+
+2024-06-01 09:18:32,778:INFO:best_params: {'actual_estimator__lambda_2': 0.05, 'actual_estimator__lambda_1': 0.0005, 'actual_estimator__fit_intercept': True, 'actual_estimator__compute_score': False, 'actual_estimator__alpha_2': 0.01, 'actual_estimator__alpha_1': 0.005}
+2024-06-01 09:18:32,779:INFO:Hyperparameter search completed
+2024-06-01 09:18:32,779:INFO:SubProcess create_model() called ==================================
+2024-06-01 09:18:32,779:INFO:Initializing create_model()
+2024-06-01 09:18:32,779:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002A67E32F940>, estimator=BayesianRidge(), fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002A60369C940>, model_only=True, return_train_score=False, error_score=0.0, kwargs={'lambda_2': 0.05, 'lambda_1': 0.0005, 'fit_intercept': True, 'compute_score': False, 'alpha_2': 0.01, 'alpha_1': 0.005})
+2024-06-01 09:18:32,779:INFO:Checking exceptions
+2024-06-01 09:18:32,780:INFO:Importing libraries
+2024-06-01 09:18:32,780:INFO:Copying training dataset
+2024-06-01 09:18:32,784:INFO:Defining folds
+2024-06-01 09:18:32,784:INFO:Declaring metric variables
+2024-06-01 09:18:32,789:INFO:Importing untrained model
+2024-06-01 09:18:32,790:INFO:Declaring custom model
+2024-06-01 09:18:32,794:INFO:Bayesian Ridge Imported successfully
+2024-06-01 09:18:32,802:INFO:Starting cross validation
+2024-06-01 09:18:32,804:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-06-01 09:18:32,874:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,880:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,890:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,890:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,891:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,894:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,896:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:32,913:INFO:Calculating mean and std
+2024-06-01 09:18:32,914:INFO:Creating metrics dataframe
+2024-06-01 09:18:32,919:INFO:Finalizing model
+2024-06-01 09:18:32,930:INFO:[LightGBM] [Warning] There are no meaningful features which satisfy the provided configuration. Decreasing Dataset parameters min_data_in_bin or min_data_in_leaf and re-constructing Dataset might resolve this warning.
+2024-06-01 09:18:32,931:INFO:[LightGBM] [Info] Total Bins 0
+2024-06-01 09:18:32,931:INFO:[LightGBM] [Info] Number of data points in the train set: 13, number of used features: 0
+2024-06-01 09:18:32,931:INFO:[LightGBM] [Info] Start training from score 305.615385
+2024-06-01 09:18:32,931:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,932:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,932:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,932:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,932:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,933:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,933:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,933:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,933:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,934:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,934:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,934:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,934:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,934:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,935:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,935:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,935:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,935:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,936:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,936:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,936:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,936:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,936:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,936:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,936:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,937:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,937:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,937:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,937:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,937:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,938:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,938:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,938:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,938:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,938:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,939:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,939:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,939:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,939:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,940:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,940:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,940:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,940:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,941:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,941:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,941:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,941:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,942:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,942:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,942:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,942:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,943:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,943:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,943:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,943:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,944:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,944:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,944:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,944:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,944:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,944:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,944:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,946:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,946:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,946:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,946:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,947:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,947:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,947:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,947:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,948:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,948:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,948:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,948:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,949:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,949:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,949:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,949:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,950:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,950:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,950:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,950:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,950:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,951:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,951:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,951:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,951:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,951:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,952:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,952:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,952:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,952:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,953:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,953:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,953:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,953:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,953:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,954:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,954:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,954:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:32,966:INFO:Uploading results into container
+2024-06-01 09:18:32,967:INFO:Uploading model into container now
+2024-06-01 09:18:32,967:INFO:_master_model_container: 21
+2024-06-01 09:18:32,968:INFO:_display_container: 3
+2024-06-01 09:18:32,968:INFO:BayesianRidge(alpha_1=0.005, alpha_2=0.01, lambda_1=0.0005, lambda_2=0.05)
+2024-06-01 09:18:32,968:INFO:create_model() successfully completed......................................
+2024-06-01 09:18:33,098:INFO:SubProcess create_model() end ==================================
+2024-06-01 09:18:33,098:INFO:choose_better activated
+2024-06-01 09:18:33,100:INFO:SubProcess create_model() called ==================================
+2024-06-01 09:18:33,101:INFO:Initializing create_model()
+2024-06-01 09:18:33,101:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002A67E32F940>, estimator=BayesianRidge(), fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-06-01 09:18:33,101:INFO:Checking exceptions
+2024-06-01 09:18:33,102:INFO:Importing libraries
+2024-06-01 09:18:33,102:INFO:Copying training dataset
+2024-06-01 09:18:33,104:INFO:Defining folds
+2024-06-01 09:18:33,104:INFO:Declaring metric variables
+2024-06-01 09:18:33,105:INFO:Importing untrained model
+2024-06-01 09:18:33,105:INFO:Declaring custom model
+2024-06-01 09:18:33,105:INFO:Bayesian Ridge Imported successfully
+2024-06-01 09:18:33,106:INFO:Starting cross validation
+2024-06-01 09:18:33,107:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-06-01 09:18:33,169:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:33,173:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:33,179:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:33,184:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:33,192:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:33,194:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:33,194:WARNING:c:\Users\marka\anaconda3\envs\aap\lib\site-packages\sklearn\metrics\_regression.py:918: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+
+2024-06-01 09:18:33,208:INFO:Calculating mean and std
+2024-06-01 09:18:33,208:INFO:Creating metrics dataframe
+2024-06-01 09:18:33,211:INFO:Finalizing model
+2024-06-01 09:18:33,222:INFO:[LightGBM] [Warning] There are no meaningful features which satisfy the provided configuration. Decreasing Dataset parameters min_data_in_bin or min_data_in_leaf and re-constructing Dataset might resolve this warning.
+2024-06-01 09:18:33,223:INFO:[LightGBM] [Info] Total Bins 0
+2024-06-01 09:18:33,224:INFO:[LightGBM] [Info] Number of data points in the train set: 13, number of used features: 0
+2024-06-01 09:18:33,224:INFO:[LightGBM] [Info] Start training from score 305.615385
+2024-06-01 09:18:33,224:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,225:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,225:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,225:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,225:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,225:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,225:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,225:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,227:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,227:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,227:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,227:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,227:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,227:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,227:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,228:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,228:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,228:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,228:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,229:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,229:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,229:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,229:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,229:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,230:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,230:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,230:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,230:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,230:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,231:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,231:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,231:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,231:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,231:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,233:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,233:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,233:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,233:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,233:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,233:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,234:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,234:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,234:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,235:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,235:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,235:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,235:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,235:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,235:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,235:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,237:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,237:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,237:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,237:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,237:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,237:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,238:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,238:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,238:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,238:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,238:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,239:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,239:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,239:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,239:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,239:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,239:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,240:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,240:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,240:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,240:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,240:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,242:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,242:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,242:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,242:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,242:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,243:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,243:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,243:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,243:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,243:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,244:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,244:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,244:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,244:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,244:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,244:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,244:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,244:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,245:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,245:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,245:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,245:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,245:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,245:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,245:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,247:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,247:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,247:INFO:[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2024-06-01 09:18:33,258:INFO:Uploading results into container
+2024-06-01 09:18:33,258:INFO:Uploading model into container now
+2024-06-01 09:18:33,259:INFO:_master_model_container: 22
+2024-06-01 09:18:33,259:INFO:_display_container: 4
+2024-06-01 09:18:33,259:INFO:BayesianRidge()
+2024-06-01 09:18:33,259:INFO:create_model() successfully completed......................................
+2024-06-01 09:18:33,379:INFO:SubProcess create_model() end ==================================
+2024-06-01 09:18:33,379:INFO:BayesianRidge() result for R2 is nan
+2024-06-01 09:18:33,379:INFO:BayesianRidge(alpha_1=0.005, alpha_2=0.01, lambda_1=0.0005, lambda_2=0.05) result for R2 is nan
+2024-06-01 09:18:33,380:INFO:BayesianRidge() is best model
+2024-06-01 09:18:33,380:INFO:choose_better completed
+2024-06-01 09:18:33,380:INFO:Original model was better than the tuned model, hence it will be returned. NOTE: The display metrics are for the tuned model (not the original one).
+2024-06-01 09:18:33,386:INFO:_master_model_container: 22
+2024-06-01 09:18:33,386:INFO:_display_container: 3
+2024-06-01 09:18:33,388:INFO:BayesianRidge()
+2024-06-01 09:18:33,388:INFO:tune_model() successfully completed......................................
+2024-06-01 09:18:33,537:INFO:Initializing predict_model()
+2024-06-01 09:18:33,537:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002A67E32F940>, estimator=BayesianRidge(), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002A6034A7E20>)
+2024-06-01 09:18:33,538:INFO:Checking exceptions
+2024-06-01 09:18:33,538:INFO:Preloading libraries
+2024-06-01 09:18:33,824:INFO:Initializing predict_model()
+2024-06-01 09:18:33,824:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002A67E32F940>, estimator=BayesianRidge(), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002A601BFA320>)
+2024-06-01 09:18:33,824:INFO:Checking exceptions
+2024-06-01 09:18:33,824:INFO:Preloading libraries
+2024-06-01 09:18:33,827:INFO:Set up data.
+2024-06-01 09:18:33,834:INFO:Set up index.
+2024-06-01 09:18:34,014:INFO:Initializing save_model()
+2024-06-01 09:18:34,014:INFO:save_model(model=BayesianRidge(), model_name=RC_Predict, prep_pipe_=Pipeline(memory=FastMemory(location=C:\Users\marka\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Year', 'PerCapGNI', 'PerCapGDP',
+                                             'GNI_USD', 'GDP_USD', 'Inflation',
+                                             'MeanPriceUSD', 'TotPop', 'ResPop',
+                                             'CitizenPop', 'PRPop', 'NonResPop',
+                                             'PopGrowth', 'ResPopGrowth',
+                                             'PopDensity', 'SexRatio',
+                                             'MedAgeRes', 'MedAgeCit',
+                                             'OldSupRatio...
+                                             'ChildDep20_64', 'OldDep20_64',
+                                             'CitSup15_64', 'CitDep15_64',
+                                             'CitChildDep15_64',
+                                             'CitOldDep15_64', ...],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('feature_selection',
+                 TransformerWrapper(exclude=[],
+                                    transformer=SelectFromModel(estimator=LGBMRegressor(),
+                                                                max_features=10,
+                                                                threshold=-inf)))]), verbose=True, use_case=MLUsecase.REGRESSION, kwargs={})
+2024-06-01 09:18:34,014:INFO:Adding model into prep_pipe
+2024-06-01 09:18:34,024:INFO:RC_Predict.pkl saved in current working directory
+2024-06-01 09:18:34,037:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Year', 'PerCapGNI', 'PerCapGDP',
+                                             'GNI_USD', 'GDP_USD', 'Inflation',
+                                             'MeanPriceUSD', 'TotPop', 'ResPop',
+                                             'CitizenPop', 'PRPop', 'NonResPop',
+                                             'PopGrowth', 'ResPopGrowth',
+                                             'PopDensity', 'SexRatio',
+                                             'MedAgeRes', 'MedAgeCit',
+                                             'OldSupRatio', 'AgeDepRatio',
+                                             'ChildDepRat', 'OldDepRat...
+                                             'CitChildDep15_64',
+                                             'CitOldDep15_64', ...],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('feature_selection',
+                 TransformerWrapper(exclude=[],
+                                    transformer=SelectFromModel(estimator=LGBMRegressor(),
+                                                                max_features=10,
+                                                                threshold=-inf))),
+                ('trained_model', BayesianRidge())])
+2024-06-01 09:18:34,037:INFO:save_model() successfully completed......................................
