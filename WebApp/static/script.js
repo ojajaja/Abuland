@@ -17,3 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
         .catch(error => console.error('Error:', error));
     });
 });
+
+function showBlock() {
+    document.getElementById("forecastResult").style.display = "block";
+  }
