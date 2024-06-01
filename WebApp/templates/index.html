@@ -2,9 +2,20 @@
 {% block title %}Rice Consumption Prediction{% endblock %}
 {% block content%}
 
+{% if submitted %}
+    <br><br>
+    <div class="prediction-result">
+        <div class="col-sm-12">
+            <br>
+            <p>Predicted Rice Consumption: {{ label }}.</p>
+        </div>
+    </div>
+    <br>
+{% endif %}
+
 <div class="container">
     <h1>Rice Price and Demand Forecast System</h1>
-    <form id="forecastForm" action="{{ url_for('index') }}" method="POST">
+    <form id="forecastForm" action="{{ url_for('forecast') }}" method="POST">
         <label for="Year">Year</label>
         <input type="number" id="Year" name="Year" min="0" step="1" required>
         
@@ -128,10 +139,10 @@
         <button type="submit">Submit</button>
     </form>
 
-    <div id="forecastResult" style="display: none;">
+    <!-- <div id="forecastResult" style="display: none;">
         <h2>Demand</h2>
         <p>Predicted Rice Demand: <span id="demand"></span> {{ label }}</p>
-    </div>
+    </div> -->
 
 </div>
 
